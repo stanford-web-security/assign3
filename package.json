@@ -4,6 +4,7 @@
   "description": "Stanford CS 253 Assignment 3",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/stanford-web-security/assign3/issues"
   },
-  "homepage": "https://github.com/stanford-web-security/assign3#readme"
+  "homepage": "https://github.com/stanford-web-security/assign3#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "minimist": "^1.2.5",
+    "open": "^8.3.0"
+  }
 }
