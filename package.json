@@ -1,0 +1,19 @@
+{
+  "name": "assign3",
+  "version": "1.0.0",
+  "description": "Stanford CS 253 Assignment 3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stanford-web-security/assign3.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stanford-web-security/assign3/issues"
+  },
+  "homepage": "https://github.com/stanford-web-security/assign3#readme"
+}
