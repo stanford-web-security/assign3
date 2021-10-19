@@ -1,3 +1,5 @@
+/* eslint-env node */
+
 'use strict'
 
 const express = require('express')
@@ -10,7 +12,7 @@ const argv = minimist(process.argv.slice(2), {
   string: ['port'],
   default: {
     open: true,
-    port: String(DEFAULT_PORT),
+    port: String(DEFAULT_PORT)
   }
 })
 

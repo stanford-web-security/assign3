@@ -4,8 +4,11 @@
   "description": "Stanford CS 253 Assignment 3",
   "main": "index.js",
   "scripts": {
+    "lint": "standard | snazzy && standard-markdown **/*.md",
+    "lint-fix": "standard --fix | snazzy && standard-markdown **/*.md --fix",
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run lint",
+    "watch": "nodemon --ext js,json,css,ejs,md -- --no-open"
   },
   "repository": {
     "type": "git",
@@ -13,6 +16,7 @@
   },
   "author": "",
   "license": "MIT",
+  "private": true,
   "bugs": {
     "url": "https://github.com/stanford-web-security/assign3/issues"
   },
@@ -21,5 +25,11 @@
     "express": "^4.17.1",
     "minimist": "^1.2.5",
     "open": "^8.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13",
+    "snazzy": "^9.0.0",
+    "standard": "^16.0.4",
+    "standard-markdown": "^7.1.0"
   }
 }
