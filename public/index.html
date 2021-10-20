@@ -24,7 +24,9 @@
     </div>
 
     <script type="text/javascript">
-      document.getElementById("fingerprint").innerText = fingerprint();
+      fingerprint().then(result => {
+        document.getElementById("fingerprint").innerText = result;
+      })
     </script>
   </body>
 </html>
