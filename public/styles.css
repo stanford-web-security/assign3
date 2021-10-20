@@ -1,0 +1,36 @@
+body {
+    background-color: azure;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 5em;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.text-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.lg-text {
+    font-size: 4em;
+}
+
+.md-text {
+    font-size: 2.5em;
+}
+
+.sm-text {
+    font-size: 2em;
+}

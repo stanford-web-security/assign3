@@ -18,7 +18,7 @@ const argv = minimist(process.argv.slice(2), {
 
 const app = express()
 
-app.use('/fingerprint.js', express.static('.'))
+app.use(express.static('.'))
 app.use(express.static('public'))
 
 app.listen(argv.port, '127.0.0.1', () => {
