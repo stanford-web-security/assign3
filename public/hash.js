@@ -1,7 +1,20 @@
 /* eslint-env browser */
 
 // eslint-disable-next-line no-unused-vars
+
+function convertToHash32(str) {
+  // Reference: https://werxltd.com/wp/2010/05/13/javascript-implementation-of-javas-string-hashcode-method/
+  let hash32 = 0, i, chr;
+  for (i = 0; i < str.length; i++) {
+    chr = str.charCodeAt(i);
+    hash32 = ((hash32 << 5) - hash32) + chr;
+    hash32 |= 0; // Convert to 32bit integer
+  }
+  return hash32
+} 
+
 function hash(...args) {
+  // Convert args to single string
   let concat = "|"
   for (elem of args) {
     try {
@@ -12,10 +25,10 @@ function hash(...args) {
     concat += string + "|"
   }
   console.log("Hashing concatenation: " + concat)
-  let hash = hash = require('crypto').createHash('sha256').update(concat, 'utf8').digest('hex')
-  return hash
+  // Create 64-bit hash from concatenated string
+  // Reference: https://security.stackexchange.com/a/210049
+  let hash32 = convertToHash32(concat)
+  let hash64 = hash32 + convertToHash32(hash32 + concat)
+  console.log("Hash: " + hash64)
+  return hash64
 }
-
-// let test = document.getElementsByClassName("html")
-// hash("a", -13789, null, true, NaN, [1,2,3], {a:3}, test)
-// Output: hash of strings concatenated (find library to do SHA256 hash)
