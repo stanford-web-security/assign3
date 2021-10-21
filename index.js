@@ -5,6 +5,7 @@
 const express = require('express')
 const minimist = require('minimist')
 const open = require('open')
+const path = require('path')
 
 const DEFAULT_PORT = 4001
 const argv = minimist(process.argv.slice(2), {
@@ -18,7 +19,7 @@ const argv = minimist(process.argv.slice(2), {
 
 const app = express()
 
-app.use(express.static('.'))
+app.use('/fingerprint.js', express.static(path.join(__dirname, 'fingerprint.js'), { redirect: false }))
 app.use(express.static('public'))
 
 app.listen(argv.port, '127.0.0.1', () => {
