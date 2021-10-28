@@ -51,6 +51,10 @@ Your browser should open up to [http://localhost:4001/](http://localhost:4001/) 
 
 ## Coding Portion (36 points)
 
+The only coding file you will need to modify for this assignment is ```fingerprint.js```, where you will implement your fingerprinting technique. To view the behavior of your implementation in ```fingerprint.js```, we provide both a hashing function in ```hash.js``` and a simple webpage in ```index.html```. Open ```index.html``` in your browser by running ```npm start```. 
+
+**TIP**: Turn off ad-blockers in your browser, as these may block some of your intended behavior.
+
 ## Short Answer Questions (24 points)
 
 Your answers should be concise. Each answer should not exceed 300 words. Include your answers in REPORT.md.
