@@ -1,5 +1,7 @@
 # Assignment 3 Report
 
+Please see the assignment spec for the full details of each question BEFORE answering below.
+
 ## What fingerprinting methods did you use? Why did you choose them?
 
 TODO: Replace this with your response
