@@ -89,11 +89,12 @@ npm run lint-fix
 
 ### Gradescope
 
-We'll use [Gradescope](https://gradescope.com/) for submissions.
+We'll use [Gradescope](https://gradescope.com/) for submissions. Please submit just fingerprint.js, REPORT.md, and SURVEY.md.
 
 ## Resources:
 
 In addition to the lecture slides from this class, you can use the two references below to get a better idea of common fingerprinting vectors.
+
     * Electronic Frontier Foundation: [Cover Your Tracks][eff]
     * INRIA: [AmIUnique Project][inria]
 
