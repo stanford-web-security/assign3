@@ -2,7 +2,7 @@
 
 ## Assignment 3 – Somebody's Always Watching 👁️
 
-- **Points:** [TODO]
+- **Points:** 63
 - **Due:** Friday, November 12 at 5:00pm
 
 Welcome to Assignment 3 for [CS 253: Web Security](https://cs253.stanford.edu). ✨
@@ -49,9 +49,9 @@ npm start
 
 Your browser should open up to [http://localhost:4001/](http://localhost:4001/) where you can begin the assignment.
 
-## Coding Portion
+## Coding Portion (36 points)
 
-## Short Answer Questions
+## Short Answer Questions (24 points)
 
 Your answers should be concise. Each answer should not exceed 300 words. Include your answers in REPORT.md.
 
@@ -68,6 +68,9 @@ Your answers should be concise. Each answer should not exceed 300 words. Include
     * Brave: [Fingerprinting Protections][brave]
     * Chromium: [Intent to Deprecate and Freeze: The User-Agent string][chromium-ua]
     * WebKit (Safari): [Tracking Prevention in WebKit § Anti Fingerprinting][webkit]
+
+## Survey (3 points)
+Your feedback matters a lot! Please help us improve by answering the survey questions in SURVEY.md. As a reward, enjoy some easy points!
 
 ## Submit
 
@@ -89,7 +92,13 @@ npm run lint-fix
 
 ### Gradescope
 
-We'll use [Gradescope](https://gradescope.com/) for submissions. Please submit just fingerprint.js, REPORT.md, and SURVEY.md.
+We'll use [Gradescope](https://gradescope.com/) for submissions. 
+
+### The moment of truth
+
+When you're ready to submit your work, you'll upload three files to Gradescope: `fingerprint.js`, `REPORT.md`, and `SURVEY.md`. 
+
+You should submit early and often! There's no downside to repeatedly submitting your assignment.
 
 ## Resources
 
