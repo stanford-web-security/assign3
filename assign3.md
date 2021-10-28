@@ -59,30 +59,24 @@ The only coding file you will need to modify for this assignment is ```fingerpri
 
 The return value of your fingerprint function should be a string, which will likely be a hash of several fingerprinting vectors. We have provided a hash function that you can feel free to use (defined in ```hash.js```), which takes in any number of arguments (each of which can be a string, number, JSON object, etc.), and returns a hash corresponding to those arguments. You can view the return value of your fingerprint function by visiting [http://localhost:4001/](http://localhost:4001/) in your browser. Feel free to make liberal use of ```console.log``` statements as well to help with debugging, which you can view using the browser Dev Tools console as usual.
 
-You are also allowed to extend the server-side code (in ```index.js```) to provide information on HTTP headers and other such things to ```fingerprint.js```. Choose one browser among Google Chrome, Mozilla Firefox, Safari, or Brave. 
+If you choose, you may also extend the server-side code to provide information on HTTP headers (or anything else you think might be helpful for your fingerprinting) to ```fingerprint.js```. To do so, modify ```your-server-code.js``` with any new endpoints that you wish to call, which you can then call in ```fingerprint.js```. Note that this is not at all required, and it's definitely possible to receive full credit without modifying the server-side code.
 
-**LIMITS:** 
+### Requirements
+* You must use at least 3 distinct fingerprinting vectors.
+* You may NOT use the client's User-Agent as one of your fingerprinting vectors. (In practice, it's often used, but makes this exercise too simple.)
+* We will be testing your code on Google Chrome, with ad-blockers turned off.
 
 ### Grading
 
-The following percentages are awarded if the corresponding criteria for the return value of ```fingerprint.js``` are met. 
+We will grade your fingerprinting technique under the following situations, and will award points if the corresponding criteria for the return value of ```fingerprint.js``` are met. 
 
-40%: return the same identifier when opening the provided HTML page, closing the tab, opening a new tab, and browsing to the page again (in the latest stable version of your browser).
+* Returns the same identifier (in the latest stable version of Google Chrome) when opening the provided HTML page, closing the tab, opening a new tab, and browsing to the page again. (14 points) 
+* Returns a different identifier when browsing to the page from a different browser (choose from: Mozilla Firefox, Safari, or Brave), as a proxy for different users. (11 points)
+* Returns the same identifier (in Google Chrome) even after clearing browser data (e.g. cookies, cache, localStorage, etc.) in Google Chrome's settings. (7 points)
+* Returns the same identifier even after clearing browser data in one additional browser (choose from: Mozilla Firefox, Safari, or Brave). (2 points)
+* Fingerprinting works in incognito/private browser mode. (2 points)
 
-30%: return different identifiers for a different browser you didn't use earlier as a proxy for different users.
-
-20%: return the same identifier even after the clearing browser data (e.g. cookies, cache, localStorage, etc.) in the browser's settings.
-
-10%: if navigator.userAgent is the only technique used.
-
-**EXTRA CREDIT**
-
-5%: fingerprinting works in incognito/private browser mode.
-
-5%: return the same identifier even after the clearing browser data (in one additional browser). For this portion, choose a browser you didn't use earlier: one of Chrome, Mozilla Firefox, Safari, or Brave.
-
-
-## Part 2: Short Answer Questions (24 points)
+## Part 2: Short Answer Questions (24 points, 6 per question)
 
 Your answers should be concise. Each answer should not exceed 300 words. Include your answers in REPORT.md.
 
@@ -127,7 +121,7 @@ We'll use [Gradescope](https://gradescope.com/) for submissions.
 
 ### The moment of truth
 
-When you're ready to submit your work, you'll upload three files to Gradescope: `fingerprint.js`, `REPORT.md`, and `SURVEY.md`. (Note: if you chose to modify the server code in `index.js` as well for your fingerprinting technique, please submit `index.js` as well.)
+When you're ready to submit your work, you'll upload three files to Gradescope: `fingerprint.js`, `REPORT.md`, and `SURVEY.md`. (Note: if you chose to modify the server code in `your-server-code.js` as well, please also submit `your-server-code.js`.)
 
 You should submit early and often! There's no downside to repeatedly submitting your assignment.
 
