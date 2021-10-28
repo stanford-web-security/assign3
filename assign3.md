@@ -57,21 +57,27 @@ Your goal is to implement a fingerprinting technique in ```fingerprint.js``` tha
 
 The return value of your fingerprint function will be a string, which will likely be a hash of several fingerprinting vectors.
 
-The only coding file you will need to modify for this assignment is ```fingerprint.js```, where you will implement your fingerprinting technique. You are also allowed to extend the server-side code (in ```index.js```) to provide information on HTTP headers and other such things to ```fingerprint.js```. Feel free to use the hashing function we provide in ```hash.js```. To view the behavior of your implementation in ```fingerprint.js```, we also provide a simple webpage in ```index.html```which you can open in your browser by running ```npm start``` in your terminal and navigating to ```localhost:4000```. 
+The only coding file you will need to modify for this assignment is ```fingerprint.js```, where you will implement your fingerprinting technique. You are also allowed to extend the server-side code (in ```index.js```) to provide information on HTTP headers and other such things to ```fingerprint.js```. Feel free to use the hashing function we provide in ```hash.js```. To view the behavior of your implementation in ```fingerprint.js```, we also provide a simple webpage in ```index.html```which you can open in your browser by running ```npm start``` in your terminal and navigating to ```localhost:4000```. Choose one browser among Google Chrome, Mozilla Firefox, Safari, or Brave. 
 
 **TIP**: Turn off ad-blockers in your browser, as these may block some of your intended behavior.
 
 ### Grading
 
-The following percentages are awarded if the corresponding criteria for the return value of ```fingerprint.js``` are met.
+The following percentages are awarded if the corresponding criteria for the return value of ```fingerprint.js``` are met. 
 
-40%: return the same identifier when opening the provided HTML page, closing the tab, opening a new tab, and browsing to the page again (in the latest stable version of Google Chrome).
+40%: return the same identifier when opening the provided HTML page, closing the tab, opening a new tab, and browsing to the page again (in the latest stable version of a browser: ).
 
-30%: return different identifiers for a different browser (e.g., Mozilla Firefox) as a proxy for different users.
+30%: return different identifiers for a different browser you didn't use earlier as a proxy for different users.
 
-20%: return the same identifier even after the clearing browser data (e.g. cookies, cache, localStorage, etc.) in Chrome’s settings.
+20%: return the same identifier even after the clearing browser data (e.g. cookies, cache, localStorage, etc.) in the browser's settings.
 
 10%: if navigator.userAgent is the only technique used.
+
+EXTRA CREDIT:
+
+5%: fingerprinting works in incognito/private browser mode.
+
+5%: return the same identifier even after the clearing browser data (in one additional browser). For this portion, choose a browser you didn't use earlier: one of Chrome, Mozilla Firefox, Safari, or Brave.
 
 
 ## Short Answer Questions (24 points)
