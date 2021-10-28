@@ -1,6 +1,6 @@
 <!-- This will be posted on https://web.stanford.edu/class/cs253/assign3 -->
 
-## Assignment 3 – [TODO]
+## Assignment 3 – Somebody's Always Watching 👁️
 
 - **Points:** [TODO]
 - **Due:** Friday, November 12 at 5:00pm
@@ -79,7 +79,7 @@ Ensure that the sanity tests pass:
 npm test
 ```
 
-This command just runs a basic sanity test that ensures your project passes `npm run lint`, has the right folder structure, and doesn't have any blank required files. If `npm test` doesn't report any errors that doesn't necessarily mean that you've solved every exercise perfectly!
+This command just runs a basic sanity test that ensures your project passes `npm run lint`. If `npm test` doesn't report any errors that doesn't necessarily mean that you've solved every exercise perfectly!
 
 **🌟 PRO TIP: You can automatically fix most lint errors by running:**
 
@@ -91,6 +91,14 @@ npm run lint-fix
 
 We'll use [Gradescope](https://gradescope.com/) for submissions.
 
+## Resources:
+
+In addition to the lecture slides from this class, you can use the two references below to get a better idea of common fingerprinting vectors.
+    * Electronic Frontier Foundation: [Cover Your Tracks][eff]
+    * INRIA: [AmIUnique Project][inria]
+
 [brave]: https://github.com/brave/brave-browser/wiki/Fingerprinting-Protections
 [chromium-ua]: https://groups.google.com/a/chromium.org/g/blink-dev/c/-2JIRNMWJ7s/m/yHe4tQNLCgAJ
 [webkit]: https://webkit.org/tracking-prevention/#anti-fingerprinting
+[eff]: https://coveryourtracks.eff.org/
+[inria]: https://amiunique.org/fp
