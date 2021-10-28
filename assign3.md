@@ -65,7 +65,7 @@ The only coding file you will need to modify for this assignment is ```fingerpri
 
 The following percentages are awarded if the corresponding criteria for the return value of ```fingerprint.js``` are met. 
 
-40%: return the same identifier when opening the provided HTML page, closing the tab, opening a new tab, and browsing to the page again (in the latest stable version of a browser: ).
+40%: return the same identifier when opening the provided HTML page, closing the tab, opening a new tab, and browsing to the page again (in the latest stable version of your browser).
 
 30%: return different identifiers for a different browser you didn't use earlier as a proxy for different users.
 
