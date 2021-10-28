@@ -73,7 +73,7 @@ The following percentages are awarded if the corresponding criteria for the retu
 
 10%: if navigator.userAgent is the only technique used.
 
-EXTRA CREDIT:
+**EXTRA CREDIT**
 
 5%: fingerprinting works in incognito/private browser mode.
 
