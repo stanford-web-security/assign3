@@ -91,12 +91,12 @@ npm run lint-fix
 
 We'll use [Gradescope](https://gradescope.com/) for submissions. Please submit just fingerprint.js, REPORT.md, and SURVEY.md.
 
-## Resources:
+## Resources
 
 In addition to the lecture slides from this class, you can use the two references below to get a better idea of common fingerprinting vectors.
 
-    * Electronic Frontier Foundation: [Cover Your Tracks][eff]
-    * INRIA: [AmIUnique Project][inria]
+ * Electronic Frontier Foundation: [Cover Your Tracks][eff]
+ * INRIA: [AmIUnique Project][inria]
 
 [brave]: https://github.com/brave/brave-browser/wiki/Fingerprinting-Protections
 [chromium-ua]: https://groups.google.com/a/chromium.org/g/blink-dev/c/-2JIRNMWJ7s/m/yHe4tQNLCgAJ
