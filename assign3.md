@@ -69,7 +69,7 @@ The following percentages are awarded if the corresponding criteria for the retu
 
 30%: return different identifiers for a different browser (e.g., Mozilla Firefox) as a proxy for different users.
 
-20%: return the same identifier even after the user clears browser data (e.g. cookies, cache, localStorage, etc.) in Chrome’s settings.
+20%: return the same identifier even after the clearing browser data (e.g. cookies, cache, localStorage, etc.) in Chrome’s settings.
 
 10%: if navigator.userAgent is the only technique used.
 
