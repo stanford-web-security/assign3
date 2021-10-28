@@ -66,8 +66,11 @@ The only coding file you will need to modify for this assignment is ```fingerpri
 The following percentages are awarded if the corresponding criteria for the return value of ```fingerprint.js``` are met.
 
 40%: return the same identifier when opening the provided HTML page, closing the tab, opening a new tab, and browsing to the page again (in the latest stable version of Google Chrome).
+
 30%: return different identifiers for a different browser (e.g., Mozilla Firefox) as a proxy for different users.
+
 20%: return the same identifier even after the user clears browser data (e.g. cookies, cache, localStorage, etc.) in Chrome’s settings.
+
 10%: if navigator.userAgent is the only technique used.
 
 
