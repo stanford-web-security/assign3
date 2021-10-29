@@ -47,19 +47,19 @@ Run the local server:
 npm start
 ```
 
-Your browser should open up to [http://localhost:4001/](http://localhost:4001/) where you can begin the assignment. The page should display the fingerprint `359d-b414-6f2d-fb8c` at the bottom of the page, corresponding to a hash of the placeholder string ```"userid"``` in the starter code.
+Your browser should open up to [http://localhost:4001/](http://localhost:4001/) where you can begin the assignment. The page should display the fingerprint `359d-b414-6f2d-fb8c` at the bottom of the page, corresponding to a hash of the placeholder string `"userid"` in the starter code.
 
-**TIP:** If you don't see the hash at the bottom of the page (the page may say ```[loading]``` instead), then you may have an ad-blocker running. You will likely want to turn off ad-blockers for the [http://localhost:4001/](http://localhost:4001/) site, as they may block some of your intended behavior. We will test all of the grading criteria below with ad-blockers turned off as well.
+**TIP:** If you don't see the hash at the bottom of the page (the page may say `[loading]` instead), then you may have an ad-blocker running. You will likely want to turn off ad-blockers for the [http://localhost:4001/](http://localhost:4001/) site, as they may block some of your intended behavior. We will test all of the grading criteria below with ad-blockers turned off as well.
 
 ## Part 1: Coding Portion (36 points)
 
 ### Instructions
 
-The only coding file you will need to modify for this assignment is ```fingerprint.js```. Your goal is to implement a fingerprinting technique in ```fingerprint.js``` that generates a unique identifier for a user across multiple browsing sessions (see **Grading** below for the exact conditions that we will be testing your fingerprinting on). The ```fingerprint.js``` script will be executed on the client side and will have full access to the DOM, including the ambient window, document, and navigator objects. 
+The only coding file you will need to modify for this assignment is `fingerprint.js`. Your goal is to implement a fingerprinting technique in `fingerprint.js` that generates a unique identifier for a user across multiple browsing sessions (see **Grading** below for the exact conditions that we will be testing your fingerprinting on). The `fingerprint.js` script will be executed on the client side and will have full access to the DOM, including the ambient window, document, and navigator objects.
 
-The return value of your fingerprint function should be a string, which will likely be a hash of several fingerprinting vectors. We have provided a hash function that you can feel free to use (defined in ```hash.js```), which takes in any number of arguments (each of which can be a string, number, JSON object, etc.), and returns a hash corresponding to those arguments. You can view the return value of your fingerprint function by visiting [http://localhost:4001/](http://localhost:4001/) in your browser. Feel free to make liberal use of ```console.log``` statements as well to help with debugging, which you can view using the browser Dev Tools console as usual.
+The return value of your fingerprint function should be a string, which will likely be a hash of several fingerprinting vectors. We have provided a hash function that you can feel free to use (defined in `hash.js`), which takes in any number of arguments (each of which can be a string, number, JSON object, etc.), and returns a hash corresponding to those arguments. You can view the return value of your fingerprint function by visiting [http://localhost:4001/](http://localhost:4001/) in your browser. Feel free to make liberal use of `console.log` statements as well to help with debugging, which you can view using the browser Dev Tools console as usual.
 
-If you choose, you may also extend the server-side code to provide information on HTTP headers (or anything else you think might be helpful for your fingerprinting) to ```fingerprint.js```. To do so, modify ```your-server-code.js``` with any new endpoints that you wish to call, which you can then call in ```fingerprint.js```. Note that this is not at all required, and it's definitely possible to receive full credit without modifying the server-side code.
+If you choose, you may also extend the server-side code to provide information on HTTP headers (or anything else you think might be helpful for your fingerprinting) to `fingerprint.js`. To do so, modify `your-server-code.js` with any new endpoints that you wish to call, which you can then call in `fingerprint.js`. Note that this is not at all required, and it's definitely possible to receive full credit without modifying the server-side code.
 
 ### Requirements
 * You must use at least 3 distinct fingerprinting vectors.
@@ -68,9 +68,9 @@ If you choose, you may also extend the server-side code to provide information o
 
 ### Grading
 
-We will grade your fingerprinting technique under the following situations, and will award points if the corresponding criteria for the return value of ```fingerprint.js``` are met. 
+We will grade your fingerprinting technique under the following situations, and will award points if the corresponding criteria for the return value of `fingerprint.js` are met.
 
-* Returns the same identifier (in the latest stable version of Google Chrome) when opening the provided HTML page, closing the tab, opening a new tab, and browsing to the page again. (14 points) 
+* Returns the same identifier (in the latest stable version of Google Chrome) when opening the provided HTML page, closing the tab, opening a new tab, and browsing to the page again. (14 points)
 * Returns a different identifier when browsing to the page from a different browser (choose from: Mozilla Firefox, Safari, or Brave), as a proxy for different users. (11 points)
 * Returns the same identifier (in Google Chrome) even after clearing browser data (e.g. cookies, cache, localStorage, etc.) in Google Chrome's settings. (7 points)
 * Returns the same identifier even after clearing browser data in one additional browser (choose from: Mozilla Firefox, Safari, or Brave). (2 points)
@@ -117,7 +117,7 @@ npm run lint-fix
 
 ### Gradescope
 
-We'll use [Gradescope](https://gradescope.com/) for submissions. 
+We'll use [Gradescope](https://gradescope.com/) for submissions.
 
 ### The moment of truth
 
@@ -130,7 +130,7 @@ You should submit early and often! There's no downside to repeatedly submitting 
 In addition to the lecture slides from this class, you can use the two references below to get a better idea of common fingerprinting vectors.
 
  * Electronic Frontier Foundation: [Cover Your Tracks][eff]
- * INRIA: [AmIUnique Project][inria]
+ * Inria: [AmIUnique Project][inria]
 
 [brave]: https://github.com/brave/brave-browser/wiki/Fingerprinting-Protections
 [chromium-ua]: https://groups.google.com/a/chromium.org/g/blink-dev/c/-2JIRNMWJ7s/m/yHe4tQNLCgAJ

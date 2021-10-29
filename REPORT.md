@@ -1,6 +1,6 @@
 # Assignment 3 Report
 
-Please see the assignment spec for the full details of each question BEFORE answering below.
+Please see the [assignment spec](https://web.stanford.edu/class/cs253/assign3) for the full details of each question BEFORE answering below.
 
 ## What fingerprinting methods did you use? Why did you choose them?
 
