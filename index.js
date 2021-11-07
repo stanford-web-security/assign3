@@ -5,6 +5,7 @@
 const express = require('express')
 const minimist = require('minimist')
 const open = require('open')
+const os = require('os')
 const path = require('path')
 const extraRoutes = require('./your-server-code')
 
@@ -24,8 +25,14 @@ app.use('/fingerprint.js', express.static(path.join(__dirname, 'fingerprint.js')
 app.use(express.static('public'))
 app.use(extraRoutes)
 
-app.listen(argv.port, '127.0.0.1', () => {
+app.listen(argv.port, '0.0.0.0', () => {
+  console.log('Server running on:')
   const url = `http://localhost:${argv.port}/`
-  console.log(`Server running on ${url}`)
+  console.log(`  ${url}`)
+  for (const iface of Object.values(os.networkInterfaces()).flat(1)) {
+    if (iface.family === 'IPv4') {
+      console.log(`  http://${iface.address}:${argv.port}/`)
+    }
+  }
   if (argv.open) open(url)
 })
